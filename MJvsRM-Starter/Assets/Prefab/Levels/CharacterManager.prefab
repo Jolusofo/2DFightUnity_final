@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &108232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 475202}
+  - component: {fileID: 114788347978414308}
+  - component: {fileID: 114636968086074522}
+  m_Layer: 0
+  m_Name: CharacterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475202
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 890.60547, y: 370.56497, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 108232}
+  m_IsPrefabParent: 1
+--- !u!114 &114636968086074522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04724bd8647644db90fd9851446ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressionStages: 2
+  levels:
+  - level_1
+  - level_2
+  mainScenes:
+  - levelId: intro
+  - levelId: select
+  - levelId: game_over
+  progression: []
+--- !u!114 &114788347978414308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1466a93b39df74bc08a8cb7a14f5b807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  solo: 0
+  numberOfUsers: 0
+  players:
+  - playerId: Player 1
+    inputId: 
+    playerType: 0
+    hasCharacter: 0
+    playerPrefab: {fileID: 0}
+    playerStates: {fileID: 0}
+    score: 0
+  - playerId: Player 2
+    inputId: 1
+    playerType: 1
+    hasCharacter: 0
+    playerPrefab: {fileID: 0}
+    playerStates: {fileID: 0}
+    score: 0
+  characterList:
+  - charId: fighter1
+    prefab: {fileID: 126410, guid: 5eb09603fd896ed4bb16435d222ab45a, type: 2}
+  - charId: fighter2
+    prefab: {fileID: 126410, guid: e1c74d60603d8eb4cafd4770026b1f6b, type: 2}
+  - charId: fighter3
+    prefab: {fileID: 126410, guid: 7caa66545a9f808499f1f1e0e274cfc8, type: 2}
+  - charId: fighter4
+    prefab: {fileID: 1885160011210772, guid: efd546828c603468d978def7ee45fc37, type: 2}
+  - charId: fighter5
+    prefab: {fileID: 1585533980868808, guid: c2452a9b651034cf0864a0a93aa02ff4, type: 2}
+  - charId: fighter6
+    prefab: {fileID: 1785790600608864, guid: a7984f976dbfc42a3b1abc1520b7534b, type: 2}
